@@ -1,49 +1,61 @@
 <html>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<head>
-		<title>Learning Bootstrap</title>
+<link rel="stylesheet" href="styles.css">   
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+     <head>
+                <title>Learning Bootstrap</title>
+     </head>
+        <body>
+<div class ="topbar">
+</div>
+                <br>
+<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center"><img src="" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">About me</h4>
+        <p class="font-weight-light text-muted mb-0">Web developer</p>
+      </div>
+    </div>
+  </div>
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+</div>
 
-	</head>
-	<body>
-		<br>
-	<h1>Day 1</h1>
-	<h3>To Do</h3>
-	<table>
-	<tr>
-		<th>What to do</th>
-		<th>Completed?</th>
-	</tr>
-	<tr>
-		<th>Make Github Site</th>
-		<th>Completed</th>
+<div class ="page-content p-5" id ="content">
+ 
 
-	</tr>	
-	<tr>
-		<th>Import bootstrap</th>
-		<th>Completed</th>
-	</tr>
-	<tr>
-		<th>Learn bootstrap</th>
-		<th>WIP</th>
+  <div class="row ">
+        <div class="col mx-auto text-white text-center">
+            <h1 class="display-4">Learning Bootstrap</h1>
+            </p>
+        </div>
+    </div>
+<button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
 
-	</tr>
-	<tr>
-		<th>Find a better way to input a massive amount of tables</th>
-		<th>WIP</th>
-	</tr>
+<br>
+       
+    <div class ="row ">
+        
+            <div class = "col text-white text-center">
+                <h1>box1</h1>
+            </div>
+            <div class = "col text-white text-center">
+                <h1>box2</h1>
+            </div>
+            <div class = "col text-white text-center">
+                <h1>box3</h1>
+            </div>
+</div>
 
-	<br>
-	<tr>
-		<th>Final Goal</th>
-		<th>Make a damn good website using my own css and js code</th>
-	</tr>
-	</table>
-
-
-	<body>
-
-
-
-
-
+<script type="text/javascript">
+$(function() {
+  $('#sidebarCollapse').on('click', function() {
+    $('#sidebar, #content').toggleClass('active');
+  });
+});
+let d = new Date();
+console.log(d);
+</script>
+        </body>
 </html>
+     
